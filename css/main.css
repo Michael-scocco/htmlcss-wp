@@ -11,35 +11,110 @@
 }
 /* regole intestazione */
 header{
-    height: 100px;
-    /* debug */
-    background-color: pink;
     position: relative;
 }
-/* creo il nav per agevolarmi nell'esercizio di domani  */
-nav{
-    height: 50px;
-    /* debug */
-    width: 100%;
-    background-color: purple;
+/* regole logo */
+#logo{
+    width: 15%;
+    margin: 0 0 80px 0;
+    border-right: 1px solid lightgray;
+    padding-right: 2%;
+}
+
+/* regole nav  */
+#menunav{
     position: absolute;
+    width: 100%;
     bottom: 0;
     z-index: 100px;
-}
-/* regole delle righe */
-.row{
-    margin: 30px 0;
+    margin-bottom: 25px;
     /* debug */
-    min-height: 400px;
-    background-color: yellow;
+    /* background-color: purple; */
+    /* height: 50px; */
+}
+/* dico ai "li" di essere in linea */
+#menunav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+}
+/* regole ad "a" */
+#menunav li a{
+    text-decoration: none;
+    color: gray;
+}
+/* voglio che le scritte diventano rosse con il passare del mause */
+#menunav li a:hover{
+    color: red;
 }
 
-.row-2{
+/* riga inserimento immagine */
+#banner-yoga{
+    background-image: url(../img/banner.jpg);
+}
 
+
+/* regole della prima */
+.row{
+    position: relative;
+    margin: 30px 0;
+    height: 60vh;
+    background-size:cover;
+    background-position:center;
+    /* debug */
+    /* min-height: 400px; */
+    /* background-color: yellow; */
+}
+/* inserimento titolo */
+.title{
+    position: absolute;
+    bottom:80px;
+    left:5%;
+    width: 50%;
+    color:white;
+    z-index: 150;
+}
+/* grandzza minima titolo */
+.size-1{
+    font-size: calc(20px + 1vw);
+}
+.size-2{
+    font-size: calc(4px + 1vw)
+}
+
+/* regole opacità */
+.opacity{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+/* regole riga 2 */
+.row-2{
     /* debug */
     background-color: blue;
     /* min-height: 500px; */
 }
+/* posiziono al centro il secondo titolo */
+div.lightblue{
+    position:relative;
+}
+div.lightblue div.middle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+/* dimensiono e cambio colore al font */
+h2{
+    font-size: calc(30px + 1vw);
+}
+.gray{
+    color: gray;
+}
+
 
 /* regola clear-fix */
 .row-2::after{
