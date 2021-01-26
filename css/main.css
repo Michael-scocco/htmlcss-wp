@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regole container */
+#container{
+    width: 80%;
+    margin: 20px auto;
+}
+/* regole intestazione */
+header{
+    height: 100px;
+    /* debug */
+    background-color: pink;
+    position: relative;
+}
+/* creo il nav per agevolarmi nell'esercizio di domani  */
+nav{
+    height: 50px;
+    /* debug */
+    width: 100%;
+    background-color: purple;
+    position: absolute;
+    bottom: 0;
+    z-index: 100px;
+}
+/* regole delle righe */
+.row{
+    margin: 30px 0;
+    /* debug */
+    min-height: 400px;
+    background-color: yellow;
+}
+
+.row-2{
+
+    /* debug */
+    background-color: blue;
+    /* min-height: 500px; */
+}
+
+/* regola clear-fix */
+.row-2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* regole div interni alla row-2 */
+.aside{
+    float: left;
+    width: 19%;
+    margin: 22px 0;
+}
+.center{
+    float: left;
+    width: 58%;
+    margin: 22px 2%;
+}
+/* regole del div, senza float */
+.lightblue{
+    height: 100px;
+    /* debug */
+    background-color: lightblue;
+}
+/* problema qui */
+.lightblue2{
+    height: 380px;
+    /* debug */
+    background-color: lightblue;
+}
+
+
+/* regole footer */
+footer{
+    height: 50px;
+    /* debug */
+    background-color: violet;
+    margin-top: 10px;
+}
